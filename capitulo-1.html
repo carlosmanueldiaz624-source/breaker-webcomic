@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Capítulo 01 — BREAKER</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         ENCABEZADO
+         ========================= -->
+
+    <header class="reader-header">
+
+        <a href="index.html">
+            ← BREAKER
+        </a>
+
+        <span>
+            CAPÍTULO 01
+        </span>
+
+    </header>
+
+
+
+    <!-- =========================
+         LECTOR
+         ========================= -->
+
+    <main class="comic-reader">
+
+
+        <!-- PORTADA DEL CAPÍTULO -->
+
+        <section class="chapter-cover">
+
+            <p>
+                BREAKER
+            </p>
+
+            <h1>
+                CAPÍTULO 01
+            </h1>
+
+            <span>
+                EL COMIENZO
+            </span>
+
+        </section>
+
+
+
+        <!-- =========================
+             PÁGINAS DEL CÓMIC
+             ========================= -->
+
+        <div class="comic-pages">
+
+
+            <!--
+            AQUÍ IRÁ LA PÁGINA 1
+
+            Cuando subamos la imagen,
+            cambiaremos esto por:
+
+            <img src="comics/capitulo-1/01.jpg">
+
+            -->
+
+            <div class="page-placeholder">
+
+                <span>
+                    PÁGINA 01
+                </span>
+
+            </div>
+
+
+
+            <!-- PÁGINA 2 -->
+
+            <div class="page-placeholder">
+
+                <span>
+                    PÁGINA 02
+                </span>
+
+            </div>
+
+
+
+            <!-- PÁGINA 3 -->
+
+            <div class="page-placeholder">
+
+                <span>
+                    PÁGINA 03
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             FINAL DEL CAPÍTULO
+             ========================= -->
+
+        <section class="chapter-end">
+
+            <p>
+                FIN DEL CAPÍTULO 01
+            </p>
+
+            <a href="index.html">
+                VOLVER AL INICIO
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         ESTILOS DEL LECTOR
+         ========================= -->
+
+    <style>
+
+        body {
+            background: #111;
+            color: white;
+        }
+
+
+        .reader-header {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            height: 60px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 0 5%;
+
+            background: rgba(17,17,17,0.95);
+
+            border-bottom: 1px solid #333;
+
+        }
+
+
+        .reader-header a {
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 0.75rem;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        .reader-header span {
+
+            color: #888;
+
+            font-size: 0.65rem;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        .comic-reader {
+
+            width: 100%;
+
+            max-width: 900px;
+
+            margin: auto;
+
+        }
+
+
+        .chapter-cover {
+
+            min-height: 70vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 50px;
+
+        }
+
+
+        .chapter-cover p {
+
+            font-size: 0.7rem;
+
+            letter-spacing: 5px;
+
+            color: #777;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .chapter-cover h1 {
+
+            font-size: clamp(3rem, 12vw, 7rem);
+
+            line-height: 0.9;
+
+            letter-spacing: -4px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .chapter-cover span {
+
+            font-size: 0.7rem;
+
+            letter-spacing: 4px;
+
+            color: #777;
+
+        }
+
+
+        .comic-pages {
+
+            width: 100%;
+
+        }
+
+
+        .page-placeholder {
+
+            width: 100%;
+
+            aspect-ratio: 2 / 3;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background: #222;
+
+            border-bottom: 2px solid #111;
+
+        }
+
+
+        .page-placeholder span {
+
+            color: #555;
+
+            font-size: 0.8rem;
+
+            letter-spacing: 3px;
+
+        }
+
+
+        .chapter-end {
+
+            min-height: 50vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 25px;
+
+            text-align: center;
+
+        }
+
+
+        .chapter-end p {
+
+            color: #777;
+
+            letter-spacing: 3px;
+
+            font-size: 0.7rem;
+
+        }
+
+
+        .chapter-end a {
+
+            color: white;
+
+            border: 1px solid #555;
+
+            padding: 15px 25px;
+
+            text-decoration: none;
+
+            font-size: 0.7rem;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .chapter-cover {
+
+                min-height: 80vh;
+
+            }
+
+        }
+
+    </style>
+
+
+</body>
+
+  </html>
